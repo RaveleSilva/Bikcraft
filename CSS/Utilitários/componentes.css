@@ -1,0 +1,170 @@
+.button{
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient(#FFBB00, #F2A50C);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    line-height: 1.33;
+    color: var(--cor-p5);
+    display: inline-block;
+    max-width: max-content;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(#edb200, #de970b);
+}
+
+.button.secundario{
+    background: var(--cor-10);
+    color: var(--cor-2);
+}
+
+.secundario:hover{
+    background: var(--cor-9);
+}
+
+.button.seta{
+    display: flex;
+    align-items: center;
+}
+
+.button.seta::after{
+    content: '';
+    width: 18px;
+    height: 10px;
+    display: inline-block;
+    background: url(/img/icones/seta.svg);
+    margin-left: 16px;
+    transition: transform 0.4s;
+}
+
+.button.seta:hover::after{
+    transform: translateX(4px);
+}
+
+.menu-hamburger{
+    gap: 8px;
+    width: 48px;
+    cursor: pointer;
+    display: none;
+    color: var(--cor-8);
+    border-top: 4px solid currentColor;
+}
+
+.menu-hamburger.active{
+    border-top: none;
+    position: relative;
+}
+
+.menu-hamburger:hover,
+.menu-hamburger.active{
+    color: var(--cor-p1);
+}
+
+.menu-hamburger::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    margin-top: 8px;
+    display: block;
+}
+
+.menu-hamburger::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    margin-top: 8px;
+    display: block;
+}
+
+.menu-hamburger.active::before{
+    rotate: 135deg;
+    transition: 0.6s;
+}
+
+.menu-hamburger.active::after{
+    rotate: -135deg;
+    position: absolute;
+    top: 0px;
+    transition: 0.6s;
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.link{
+    padding-bottom: 8px;
+    border-bottom: 4px solid currentColor;
+    display: inline-block;
+    color: var(--cor-p1);
+    text-transform: uppercase;
+    font:500 1.5rem/1.5 "Poppins";
+}
+
+.link:hover{
+    color: var(--cor-0);
+}
+
+.head-title-bg{
+    background-color: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.head-title{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.head-title h1{
+    color: var(--cor-0);
+}
+
+.head-title h1 > span{
+    color: var(--cor-p1);
+}
+
+.head-title > span{
+    display: block;
+    margin-bottom: 8px;
+    color: var(--cor-5);
+}
+
+.head-title > span{
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 800px){
+    .head-title-bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .head-title > span{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 600px){
+    .menu-hamburger{
+        display: block;
+    }
+
+    .button{
+        padding: 12px 16px;
+        font-size: 1rem;
+    }
+}

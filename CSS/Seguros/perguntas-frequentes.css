@@ -1,0 +1,64 @@
+.perguntas{
+    padding: 120px 40px;
+}
+
+.perguntas h2{
+    margin-bottom: 120px;
+}
+
+.perguntas dt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 24px;
+}
+
+.perguntas dt::before{
+    content: '';
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    position: absolute;
+    left: -20px;
+}
+
+.perguntas dt > img{
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.perguntas > dl{
+    display: grid;
+    gap: 16px;
+}
+
+dl > div{
+    padding: 20px 20px 20px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+dl > div:hover dt > img{
+    rotate: 180deg;
+}
+
+dl > div:nth-child(odd){
+    background-color: var(--cor-1);
+}
+
+.perguntas dd{
+    max-width: 80ch;
+    margin-top: 16px;
+}
+
+@media (max-width: 800px){
+    .perguntas{
+        padding: 60px 40px;
+    }
+
+    .perguntas h2{
+        margin-bottom: 60px;
+    }
+}

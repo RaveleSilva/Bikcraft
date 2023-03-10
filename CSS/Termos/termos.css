@@ -1,0 +1,47 @@
+.termos-title-bg{
+    background-color: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.termos-title > span{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.termos-topicos{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.topico{
+    margin-bottom: 48px;
+    max-width: 78ch;
+}
+
+.topico h2{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.topico p+p {
+    margin-top: 20px;
+}
+
+@media (max-width: 800px){
+    .termos-title-bg{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .termos-topicos{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .termos-title > span{
+        text-transform: lowercase;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
