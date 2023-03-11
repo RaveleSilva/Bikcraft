@@ -10,7 +10,7 @@
     line-height: 1.33;
     color: var(--cor-p5);
     display: inline-block;
-    max-width: max-content;
+    width: max-content;
 }
 
 .button:hover{

@@ -118,4 +118,15 @@
     height: 160px;
     resize: none;
 }
+
+@media (max-width: 800px){
+   .contato-bg{
+    margin-bottom: 60px;
+   }
+   
+    .contato{
+        grid-template-columns: 1fr;
+        margin-bottom: 60px;
+    }
+}
     
