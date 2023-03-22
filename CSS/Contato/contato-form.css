@@ -15,6 +15,7 @@
 .loja-online{
     background-color: var(--cor-12);
     padding: 60px;
+    border-radius: 4px 0px 0px 4px;
 }
 
 .loja-online h2{
@@ -82,6 +83,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     background-color: var(--cor-0);
+    border-radius: 0px 4px 4px 0px
 }
 
 .form-campo:nth-child(3){
