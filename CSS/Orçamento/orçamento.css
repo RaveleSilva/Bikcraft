@@ -59,7 +59,12 @@
 .orçamento-dados input:checked + label{
     background-color: var(--cor-0);
     color: var(--cor-11);
+    border-radius: 4px 4px 0px 0px;
+}
+
+.orçamento-dados > input:checked + label{
     border-color: var(--cor-p1);
+    border-radius: 4px;
 }
 
 .orçamento-dados label::before{
@@ -97,9 +102,47 @@
     justify-content: space-between;
 }
 
+.orçamento-conteudo label > span{
+    display: none;
+}
+
+.orçamento-dados input:checked + label > span{
+    display: block;
+}
+
 #bikcraft:checked ~ #orçamento-bicicleta,
 #seguro:checked ~ #orçamento-seguro{
     display: block;
+}
+
+.bicicleta-detalhe{
+    background-color: var(--cor-0);
+    margin-top: -24px;
+    padding: 0px 20px 20px 32px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 4px 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: none;
+}
+
+.bicicleta-detalhe li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bicicleta-detalhe li + li{
+    margin-top: 8px;
+}
+
+.bicicleta-detalhe li > img{
+    width: 16px;
+    height: auto;
+}
+
+.orçamento-conteudo > input:checked + label + .bicicleta-detalhe{
+    display: grid;
 }
 
 .orçamento > form{
