@@ -104,6 +104,10 @@
 
 .orçamento-conteudo label > span{
     display: none;
+    background-color: var(--cor-12);
+    color: var(--cor-0);
+    border-radius: 4px;
+    padding: 8px 12px;
 }
 
 .orçamento-dados input:checked + label > span{
