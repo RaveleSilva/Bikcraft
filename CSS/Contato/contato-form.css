@@ -138,5 +138,15 @@
         grid-template-columns: 1fr;
         margin-bottom: 60px;
     }
+
+    .contato form{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px){
+    .loja-online{
+        padding: 40px;
+    }
 }
     

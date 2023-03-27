@@ -66,3 +66,9 @@
         margin-bottom: 60px;
     }
 }
+
+@media (max-width: 600px){
+    .lojas-mapa-conteudo{
+        grid-template-columns: 1fr;
+    }
+}
