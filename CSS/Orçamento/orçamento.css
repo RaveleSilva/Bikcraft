@@ -158,6 +158,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    position: relative;
+}
+
+.orçamento > form::after{
+    content: url(../../img/dec/bottom-right.svg);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .orçamento > form h2{

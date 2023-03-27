@@ -13,6 +13,14 @@
 .intro-text{
     align-self: end;
     padding-bottom: 200px;
+    position: relative;
+}
+
+.intro-text::before{
+    content: url(../../img/dec/bottom-right.svg);
+    position: absolute;
+    bottom: 160px;
+    right: 0px;
 }
 
 .intro-text h1{
@@ -47,6 +55,10 @@
 
     .intro-text h1{
         margin-bottom: 16px;
+    }
+
+    .intro-text::before{
+        display: none;
     }
 
     .intro-desc{

@@ -5,6 +5,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+    position: relative;
+}
+
+.depoimento::after{
+    content: url(../../img/dec/bottom-right-p.svg);
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
 }
 
 .depoimento-imagem img{
@@ -48,6 +56,10 @@
         text-align: center;
     }
 
+    .depoimento::after{
+        display: none;
+    }
+
     .depoimento-imagem img{
         height: 300px;
     }
@@ -55,6 +67,12 @@
     .depoimentos-texto{
         padding: 40px 20px;
         justify-self: center;
+    }
+}
+
+@media(max-width:600px){
+    .depoimento-texto{
+        padding-bottom: 40px;
     }
 }
 

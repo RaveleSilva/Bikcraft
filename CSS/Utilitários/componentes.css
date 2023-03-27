@@ -119,6 +119,14 @@
     background-color: var(--cor-11);
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
+}
+
+.head-title-bg::after{
+    content: url(../../img/dec/top-right.svg);
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
 }
 
 .head-title h1{

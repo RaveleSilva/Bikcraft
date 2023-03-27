@@ -1,5 +1,13 @@
 .bicicletas{
-    padding: 120px 0;
+    padding: 60px 0;
+    position: relative;
+}
+
+.bicicletas::before{
+    content: url(../../img/dec/bottom-left.svg);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
 
 .bicicleta-bg{
