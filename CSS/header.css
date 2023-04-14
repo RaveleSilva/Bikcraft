@@ -36,7 +36,8 @@ header{
     transition: width 0.3s;
 }
 
-.nav-container a:hover:after{
+.nav-container a:hover::after,
+.nav-container a.ativo::after{
     width: 100%;
 }
 
