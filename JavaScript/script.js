@@ -38,6 +38,26 @@ function ativarProduto(parametro){
 
 parametros.forEach(ativarProduto)
 
-console.log(parametros)
+//Galeria Bicicletas
+
+const galeria = document.querySelectorAll('.bikes-imagens img')
+const galeriaContainer = document.querySelector('.bikes-imagens')
+
+function trocarImagem(){
+    const img = event.currentTarget
+    galeriaContainer.prepend(img)
+}
+
+function eventosGaleria(img){
+    img.addEventListener('click', trocarImagem)
+}
+
+galeria.forEach(eventosGaleria)
+
+//Plug-in simple-anime
+
+if (window.SimpleAnime){
+    new SimpleAnime()
+}
 
 
